@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Live Weather Dashboard</title>
+<link rel="stylesheet" href="api.css">
+</head>
+
+<body>
+  <div class="app">
+    <h1>🌤️ Live Weather Dashboard</h1>
+
+    <form class="search" id="searchForm" novalidate>
+      <input type="text" id="cityInput" placeholder="Search a city (e.g. Delhi)" aria-label="City name"
+        autocomplete="off">
+      <button type="submit" id="searchBtn">Search</button>
+    </form>
+    <p id="message" role="alert"></p>
+
+    <div id="loader" class="loader hidden" aria-label="Loading"></div>
+    <section id="result" class="hidden"></section>
+  </div>
+
+<script src="api.js"></script>
+</body>
+
+</html>
